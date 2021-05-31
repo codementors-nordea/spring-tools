@@ -1,5 +1,6 @@
 package pl.infoshare.validation.raise.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Value;
 import pl.infoshare.validation.raise.validators.MaxPercentageRaise;
 import pl.infoshare.validation.raise.validators.MaxRaiseDate;
@@ -17,12 +18,17 @@ import java.util.List;
 public class RaiseRequest {
     @NotNull
     BigDecimal currentSalary;
+
     @Future
     @MaxRaiseDate
+    @Schema(description = "Podwyżki zaplanowane na późniejszy czas niż najbliższe 3 miesiące nie będą rozpatrywane")
     LocalDate proposedRaiseDate;
+
     BigDecimal proposedSalary;
+
     @NotNull
     @Size(max = 2)
     @Valid
+    @Schema(description = "Ilość poprzednich podwyżek. Ich łączna ilość nie może przekraczać dwóch." )
     List<AcceptedRaise> previousRaises;
 }
