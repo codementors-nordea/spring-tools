@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.4.6'
+    id 'org.springframework.boot' version '2.5.0'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
 }
@@ -20,6 +20,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springdoc:springdoc-openapi-ui:1.5.8'
     compileOnly 'org.projectlombok:lombok'
