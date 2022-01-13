@@ -1,4 +1,4 @@
-package pl.infoshare.validation.actuator.health;
+package pl.codementors.validation.actuator.health;
 
 import lombok.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;

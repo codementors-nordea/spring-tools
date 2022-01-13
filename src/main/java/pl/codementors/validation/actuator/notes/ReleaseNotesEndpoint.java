@@ -1,4 +1,4 @@
-package pl.infoshare.validation.actuator.notes;
+package pl.codementors.validation.actuator.notes;
 
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 import org.springframework.boot.actuate.endpoint.annotation.Selector;

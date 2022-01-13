@@ -1,10 +1,10 @@
-package pl.infoshare.validation.actuator.health;
+package pl.codementors.validation.actuator.health;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.stereotype.Component;
-import pl.infoshare.validation.raise.RaiseBudgetRepository;
+import pl.codementors.validation.raise.RaiseBudgetRepository;
 
 @Component
 @RequiredArgsConstructor

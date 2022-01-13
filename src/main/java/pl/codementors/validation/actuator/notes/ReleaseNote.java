@@ -1,4 +1,4 @@
-package pl.infoshare.validation.actuator.notes;
+package pl.codementors.validation.actuator.notes;
 
 import lombok.Value;
 
