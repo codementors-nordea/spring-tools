@@ -1,12 +1,12 @@
-package pl.infoshare.validation.raise;
+package pl.codementors.validation.raise;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import pl.infoshare.validation.metrics.RaiseRequestMetrics;
-import pl.infoshare.validation.raise.model.AcceptedRaise;
-import pl.infoshare.validation.raise.model.RaiseRequest;
-import pl.infoshare.validation.raise.validators.NotEnoughBudgetException;
-import pl.infoshare.validation.raise.validators.RaiseBudgetValidator;
+import pl.codementors.validation.metrics.RaiseRequestMetrics;
+import pl.codementors.validation.raise.model.AcceptedRaise;
+import pl.codementors.validation.raise.model.RaiseRequest;
+import pl.codementors.validation.raise.validators.NotEnoughBudgetException;
+import pl.codementors.validation.raise.validators.RaiseBudgetValidator;
 
 @Component
 @RequiredArgsConstructor

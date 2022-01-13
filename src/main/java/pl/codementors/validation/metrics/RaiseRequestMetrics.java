@@ -1,10 +1,10 @@
-package pl.infoshare.validation.metrics;
+package pl.codementors.validation.metrics;
 
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.Gauge;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.stereotype.Component;
-import pl.infoshare.validation.raise.model.RaiseRequest;
+import pl.codementors.validation.raise.model.RaiseRequest;
 
 import java.math.BigDecimal;
 
