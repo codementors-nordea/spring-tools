@@ -1,4 +1,4 @@
-package pl.infoshare.validation.raise;
+package pl.codementors.validation.raise;
 
 import org.springframework.stereotype.Component;
 

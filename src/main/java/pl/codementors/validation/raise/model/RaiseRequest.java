@@ -1,8 +1,8 @@
-package pl.infoshare.validation.raise.model;
+package pl.codementors.validation.raise.model;
 
 import lombok.Value;
-import pl.infoshare.validation.raise.validators.MaxPercentageRaise;
-import pl.infoshare.validation.raise.validators.MaxRaiseDate;
+import pl.codementors.validation.raise.validators.MaxPercentageRaise;
+import pl.codementors.validation.raise.validators.MaxRaiseDate;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Future;

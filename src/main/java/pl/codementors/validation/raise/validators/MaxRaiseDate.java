@@ -1,4 +1,4 @@
-package pl.infoshare.validation.raise.validators;
+package pl.codementors.validation.raise.validators;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
