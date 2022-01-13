@@ -1,4 +1,4 @@
-package pl.infoshare.validation;
+package pl.codementors.validation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

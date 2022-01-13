@@ -1,9 +1,9 @@
-package pl.infoshare.validation.exceptions;
+package pl.codementors.validation.exceptions;
 
 import lombok.Value;
 
 @Value
-public class InfoshareError {
+public class ApplicationError {
     String errorCode;
     Integer statusCode;
     String explanation;

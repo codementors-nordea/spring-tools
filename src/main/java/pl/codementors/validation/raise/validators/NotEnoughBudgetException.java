@@ -1,8 +1,8 @@
-package pl.infoshare.validation.raise.validators;
+package pl.codementors.validation.raise.validators;
 
-import pl.infoshare.validation.exceptions.InfoshareException;
+import pl.codementors.validation.exceptions.ApplicationException;
 
-public class NotEnoughBudgetException extends InfoshareException {
+public class NotEnoughBudgetException extends ApplicationException {
 
     private static final String ERROR_CODE = "no-budget";
     private static final String ERROR_MESSAGE = "There is not enough budget to cover this raise request.";

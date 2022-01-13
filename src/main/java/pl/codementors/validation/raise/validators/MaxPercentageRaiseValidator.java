@@ -1,6 +1,6 @@
-package pl.infoshare.validation.raise.validators;
+package pl.codementors.validation.raise.validators;
 
-import pl.infoshare.validation.raise.model.RaiseRequest;
+import pl.codementors.validation.raise.model.RaiseRequest;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

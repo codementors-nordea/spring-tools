@@ -1,0 +1,25 @@
+### Accepted
+POST http://localhost:8080/api/raises
+Content-Type: application/json
+
+{
+  "currentSalary": 3000,
+  "proposedRaiseDate": "2021-07-10",
+  "proposedSalary": 3299.99,
+  "previousRaises": [
+    { "id": "30.DEC.2020-3000", "date": "2020-12-30", "acceptedSalary": 3000 }
+  ]
+}
+
+### No budget
+POST http://localhost:8080/api/raises
+Content-Type: application/json
+
+{
+  "currentSalary": 15000,
+  "proposedRaiseDate": "2021-07-10",
+  "proposedSalary": 18000,
+  "previousRaises": [
+    { "id": "30.JUN.2020-15000", "date": "2021-06-30", "acceptedSalary": 15000 }
+  ]
+}
