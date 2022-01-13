@@ -1,9 +1,9 @@
-package pl.infoshare.validation.raise.validators;
+package pl.codementors.validation.raise.validators;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import pl.infoshare.validation.raise.RaiseBudgetRepository;
-import pl.infoshare.validation.raise.model.RaiseRequest;
+import pl.codementors.validation.raise.model.RaiseRequest;
+import pl.codementors.validation.raise.RaiseBudgetRepository;
 
 @Component
 @RequiredArgsConstructor

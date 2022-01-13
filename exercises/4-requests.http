@@ -1,4 +1,0 @@
-GET http://localhost:8080/actuator/release-notes
-
-###
-GET http://localhost:8080/actuator/release-notes/1.1

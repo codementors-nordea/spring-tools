@@ -1,4 +1,4 @@
-package pl.infoshare.validation.exceptions;
+package pl.codementors.validation.exceptions;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -11,18 +11,18 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 @RestControllerAdvice
-public class InfoshareExceptionHandler extends ResponseEntityExceptionHandler {
+public class ApplicationExceptionHandler extends ResponseEntityExceptionHandler {
 
-    @ExceptionHandler(InfoshareException.class)
+    @ExceptionHandler(ApplicationException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public InfoshareError handleInfoshareException(InfoshareException exception) {
-        return new InfoshareError(exception.getCode(), 400, exception.getMessage());
+    public ApplicationError handleApplicationException(ApplicationException exception) {
+        return new ApplicationError(exception.getCode(), 400, exception.getMessage());
     }
 
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
         return ResponseEntity
                 .badRequest()
-                .body(new InfoshareError(ex.getNestedPath(), 400, ex.getMessage()));
+                .body(new ApplicationError(ex.getNestedPath(), 400, ex.getMessage()));
     }
 }

@@ -1,4 +1,4 @@
-package pl.infoshare.validation.raise.model;
+package pl.codementors.validation.raise.model;
 
 import lombok.Value;
 
